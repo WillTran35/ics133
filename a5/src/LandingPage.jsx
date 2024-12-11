@@ -64,45 +64,6 @@ export default function LandingPage() {
     }
   }, [selectedTimezone]);
 
-  // useEffect(()=>{
-  //   if (selectedLocation && selectedTimezone){
-  //     //it is {time} at this {location} in the timezone: {timezone}.
-  //     const fetchAll = async()=> {
-  //       if (selectedLocation == "No locations available"){
-  //         setSelectedLocation("");
-  //         // console.log("im here");
-  //         const response3 = await fetch(API_URL2);
-  //         const data3 = await response3.json(); 
-  //         const datetime = data3.datetime;
-  //         const first = datetime.split('T')[1];
-  //         const second = first.split('.')[0];
-  //         console.log(second);
-  //         setCurrentTime(second);
-  //       }
-  //       else{
-  //         console.log(API_URL3);
-  //         const response3 = await fetch(API_URL3);
-  //         const data3 = await response3.json(); 
-  //         //parse datetime
-  //         //get the time 
-  //         // const data3array = Object.values(data3);
-  //         const datetime = data3.datetime;
-  //         // 2024-12-12T06:25:24.969000+09:30
-          
-  //         const first = datetime.split('T')[1];
-  //         const second = first.split('.')[0];
-  //         // console.log(datetime.split('T')[1]);
-  //         console.log(datetime);
-  //         setCurrentTime(second);
-
-  //       }
-      
-
-  //     }
-      
-  //     fetchAll();
-  //   }
-    
   // }, [selectedLocation, selectedTimezone])
   const handleSubmit = (e)=>{
     e.preventDefault();
